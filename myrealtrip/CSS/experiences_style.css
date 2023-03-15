@@ -396,13 +396,65 @@ nav > ul > li:hover {
   color: white;
 }
 
-/* 배너 시작 */
+/* 이벤트 슬라이드 시작 */
+
+#event > .event_side {
+  width: 100%;
+  height: 302px;
+  margin-bottom: 40px;
+}
+
+#event > .event_side > .side_list {
+  list-style: none;
+  width: 1060px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+}
+
+#event > .event_side > .side_list > li > a {
+  background: none;
+}
+
+#event > .event_side > .side_list > li > a > img {
+  width: 1060px;
+  height: 100%;
+}
+
+/* 투어 시작 */
+
+/* 공통 */
+
+#tour {
+  max-width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#tour > div > a {
+  display: flex;
+  align-items: center;
+  background: none;
+  color: black;
+}
+#tour > div > a > img {
+  transform: scaleX(-1);
+}
 
 /* footer */
 
+.footer-left > a {
+  background: none;
+}
+
 .footer {
+  max-width: 1060px;
   padding: 40px 30px;
-  margin: 0px 100px;
+  margin: 0px auto;
   display: flex;
   justify-content: space-between;
   width: 60%;
