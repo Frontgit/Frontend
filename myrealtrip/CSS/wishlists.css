@@ -5,6 +5,243 @@
   text-decoration: none;
   background-color: #e9e9e9;
 }
+/* 해더 시작 */
+.top {
+  background-color: #2b96ed;
+}
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  margin-top: 10px;
+}
+
+.head-left {
+  display: flex;
+  align-items: center;
+}
+
+.head-search input {
+  align-items: center;
+  width: 300px;
+  height: 40px;
+  font-size: 16px;
+  margin-left: 30px;
+  padding-left: 40px;
+  background-color: #f5f6f7;
+  border: none;
+  background-image: url(../img/ic_search_20x20_gray_500.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px center;
+}
+
+.head-right {
+  display: flex;
+  align-items: center;
+}
+
+.partner-login button {
+  border: none;
+  background-color: rgb(251, 251, 251);
+  margin: 0 13px;
+  cursor: pointer;
+  align-items: center;
+  color: #666d75;
+  font-size: 16px;
+}
+
+.login button {
+  border: none;
+  background-color: rgb(252, 252, 252);
+  margin: 0 13px;
+  cursor: pointer;
+  align-items: center;
+  color: #666d75;
+  font-size: 16px;
+}
+
+.sign-up button {
+  margin: 0 13px;
+  background-color: white;
+  color: #2b96ed;
+  border-color: #2b96ed;
+  padding: 5px 20px;
+  cursor: pointer;
+  align-items: center;
+  position: relative;
+  font-size: 16px;
+  border-style: solid;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.menu .fly {
+  align-items: center;
+  font-size: 16px;
+  padding-left: 40px;
+  background-image: url(../img/69_original_1651050188.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px center;
+  cursor: pointer;
+  font-weight: bold;
+  color: #495056;
+  margin: 0 2px;
+  text-decoration: none;
+}
+
+.menu .house {
+  align-items: center;
+  font-size: 16px;
+  padding-left: 40px;
+  background-image: url(../img/79_original_1651050471.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px center;
+  cursor: pointer;
+  font-weight: bold;
+  color: #495056;
+  margin: 0 2px;
+  text-decoration: none;
+}
+
+.menu .tour {
+  align-items: center;
+  font-size: 16px;
+  padding-left: 40px;
+  background-image: url(../img/89_original_1657589745.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px center;
+  cursor: pointer;
+  font-weight: bold;
+  color: #495056;
+  margin: 0 2px;
+  text-decoration: none;
+}
+
+.menu .rent {
+  align-items: center;
+  font-size: 16px;
+  padding-left: 40px;
+  background-image: url(../img/71_original_1651050268.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px center;
+  cursor: pointer;
+  font-weight: bold;
+  color: #495056;
+  margin: 0 2px;
+  text-decoration: none;
+}
+
+.menu .lucky {
+  align-items: center;
+  font-size: 16px;
+  padding-left: 40px;
+  background-image: url(../img/1330_original_1676986240.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px center;
+  cursor: pointer;
+  font-weight: bold;
+  color: #495056;
+  margin: 0 2px;
+  text-decoration: none;
+}
+
+.menu .package {
+  align-items: center;
+  font-size: 16px;
+  padding-left: 40px;
+  background-image: url(../img/22_original_1592285011.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px center;
+  cursor: pointer;
+  font-weight: bold;
+  color: #495056;
+  margin: 0 2px;
+  text-decoration: none;
+}
+
+.menu .AI {
+  align-items: center;
+  font-size: 16px;
+  padding-left: 40px;
+  background-image: url(../img/1265_original_1676017530.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px center;
+  cursor: pointer;
+  font-weight: bold;
+  color: #495056;
+  margin: 0 2px;
+  text-decoration: none;
+}
+
+.menu .hotel {
+  align-items: center;
+  font-size: 16px;
+  padding-left: 40px;
+  background-image: url(../img/80_original_1651050493.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px center;
+  cursor: pointer;
+  font-weight: bold;
+  color: #495056;
+  margin: 0 2px;
+  text-decoration: none;
+}
+
+.menu .travel {
+  align-items: center;
+  font-size: 16px;
+  padding-left: 40px;
+  background-image: url(../img/86_original_1652102534.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px center;
+  cursor: pointer;
+  font-weight: bold;
+  color: #495056;
+  margin: 0 2px;
+  text-decoration: none;
+}
+
+.menu .more {
+  align-items: center;
+  font-size: 16px;
+  padding-left: 20px;
+  background-image: url(../img/ic_arrow_down_md_gray_700.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 70px;
+  cursor: pointer;
+  margin-right: 40px;
+  width: 100px;
+  font-weight: bold;
+  color: #495056;
+  margin: 0 2px;
+  text-decoration: none;
+}
+
+.top:after {
+  content: "";
+  display: block;
+  margin-top: 15px;
+  width: 100%;
+  border-bottom: 1px solid #bcbcbc;
+}
+
 img {
   width: 100%;
 }
