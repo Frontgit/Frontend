@@ -5,6 +5,37 @@
   text-decoration: none;
   background-color: #e9e9e9;
 }
-img {
+/* img {
   width: 100%;
+} */
+
+#trip_city {
+  width: 100%;
+  height: 243px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #2b96ed;
+}
+
+.search {
+  width: 430px;
+  height: 56px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.search > div{
+  display: flex;
+  justify-content: center;
+  left: 102px;
+}
+.search > input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-align: center;
+  background-color: rgba(245, 246, 255, 0.15;
+  background-image: url(../img/ic_search_sm_white.svg);
 }
