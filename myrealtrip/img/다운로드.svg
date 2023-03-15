@@ -1,3 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-    <path fill="none" fill-rule="evenodd" stroke="#495056" stroke-linecap="round" stroke-width="2" d="M14 6l-6 6.003L13.993 18"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="26" viewBox="0 0 33 26">
+    <g fill="#DEE2E6" fill-rule="evenodd" transform="translate(0 1)">
+        <ellipse cx="9.281" cy="8" rx="3.094" ry="3"/>
+        <path fill-rule="nonzero" d="M29.5 2.719h-26V21.28h26V2.72zm3-1.031v20.625c0 1.139-.895 2.062-2 2.062h-28c-1.105 0-2-.923-2-2.063V1.688c0-1.139.895-2.062 2-2.062h28c1.105 0 2 .923 2 2.063z"/>
+        <path fill-rule="nonzero" d="M20.908 10.331c.442-.476 1.224-.432 1.607.09l5.138 7c.486.661-.003 1.579-.84 1.579H8.25c-.926 0-1.383-1.091-.719-1.717l5.304-5c.387-.365 1-.379 1.404-.03l2.714 2.34 3.955-4.262z"/>
+    </g>
 </svg>
