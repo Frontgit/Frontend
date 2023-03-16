@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+
+.login-card{
+    margin:auto;
+    padding:46px;
+    height:276px;
+    width:332px;
+    background-color: white;
+    border:1px #ccc solid;
+}
+.login-card>img{
+    display: block;
+    width:180px;
+    height:48px;
+    margin: auto;
+}
+
+.login-card>h3{
+    margin:20px 0 36px;
+    text-align: center;
+    font-size: 22px;
+}
+.login-card>h3>span{
+    color:rgb(43,150,237);
+}
+
+
+.kakao-login{
+    height:48px;
+    width:330px;
+    background-color:rgb(247,227,23);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.kakao-login>img{
+    width:20px;
+    height:20px;
+    margin-right:10px;
+}
+.kakao-login>p{
+    color:rgb(56,20,31);
+    font-weight: bold;
+}
+
+.login-button{
+    position: absolute;
+    display: flex;
+    background-color: aqua;
+}
