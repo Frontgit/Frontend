@@ -466,6 +466,7 @@ nav > ul > li:hover {
 
 .tour_card > ul {
   display: flex;
+  overflow: hidden;
 }
 
 .tour_card > ul > li > a {
