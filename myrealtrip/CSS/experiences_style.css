@@ -5,6 +5,7 @@
   text-decoration: none;
   list-style: none;
   background-color: white;
+  btn
 }
 
 a {
@@ -16,6 +17,10 @@ a {
 }
 a:hover {
   cursor: pointer;
+}
+
+button {
+border:none;
 }
 
 header {
@@ -447,137 +452,93 @@ nav > ul > li:hover {
 
 /* footer */
 
-.footer-left > a {
-  background: none;
+/* footer 공통 */
+footer {
+  border-top: 1px solid gray;
 }
 
-.footer {
+/* footer 상단  */
+footer > #footer_top {
   max-width: 1060px;
-  padding: 40px 30px;
-  margin: 0px auto;
   display: flex;
-  justify-content: space-between;
-  width: 60%;
-  margin-left: 250px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 40px 0px;
+  border-bottom: 1px solid gray;
 }
 
-ul li {
-  list-style: none;
-}
 
-span {
-  color: #666d75;
+#footer_top > .cs_info{
+  width: 50%;
+}
+#footer_top > .cs_info > span {
   font-size: 18px;
   font-weight: bold;
+  color: #666d75;
 }
 
-ul li {
-  color: #495056;
+#footer_top > .cs_info > ul{
+  margin-top: 10px;
   font-size: 14px;
-  margin: 5px 0px;
+  color: #495056;
 }
 
-.customer button {
-  background-color: white;
-  margin: 15px 0px;
-  padding: 5px 10px;
-  cursor: pointer;
-  color: #495056;
-  font-size: 16px;
-  border-color: #d4d4d4;
+#footer_top > .cs_info > .cs_btn{
+  margin-top: 16px;
+}
+
+#footer_top > .cs_info > .cs_btn > .cs_chat{
+  width: 110px;
+  height: 40px;
+  border: 0.6px solid #666d75;
   border-radius: 5px;
-  border-style: solid;
-}
-
-.introduce ul li {
-  margin: 10px 0;
-}
-
-.partner ul li {
-  margin: 10px 0;
-}
-
-.support ul li {
-  margin: 10px 0;
-}
-
-.div-line {
-  border-bottom: 1px solid #dadde1;
-  margin: 0 8%;
-}
-
-.footer-left > * {
-  color: #495056;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: inline-block;
-  padding: 40px 10px;
-}
-
-.use {
-  margin-left: 120px;
-}
-
-.info {
+  padding: 9px 8px;
+  font-size: 14px;
   font-weight: bold;
+  color: #495056;
 }
 
-.footer-right > * {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: inline-block;
-  /* padding: 0 10px; */
-}
-
-.footer-mid {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 70%;
-  margin-left: 150px;
-}
-
-.line {
-  border-left: 1px solid #97a0a8;
-  margin-left: 20px;
-}
-
-.footer-right > * {
-  padding: 8px;
-  padding-top: 40px;
-}
-
-.lang {
-  background-color: white;
-  color: #97a0a8;
-  border: 1px solid #97a0a8;
-  padding: 5px 20px;
+#footer_top > .cs_info > .cs_btn > .cs_chat:hover{
   cursor: pointer;
-  align-items: center;
-  border-radius: 5px;
-  display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px;
+}
+
+#footer_top > .business_info {
+  width: 50%;
   display: flex;
-  justify-content: center;
+}
+
+#footer_top > .business_info > div {
+  width: calc(100% / 3);
+}
+
+#footer_top > .business_info > div > span{
+  font-weight: bold;
+  font-size: 15px;
+  color: #666d75;
+}
+#footer_top > .business_info > div > ul{
+  margin-top: 10px;
+}
+
+#footer_top > .business_info > div > ul > li {
+  background: none;
+  height: 32px;
+}
+
+#footer_top > .business_info > div > ul > li > a {
   position: relative;
-  left: 300px;
-  top: -40px;
+  left: -6px;
+  padding: 6px;
+  font-weight: 500;
+  color: #666d75;
+  background: none;
+  font-size: 14px;
+  border-radius: 4px;
 }
 
-.korean {
-  font-size: 16px;
-  font-weight: lighter;
-}
-
-.footer-bottom {
-  width: 80%;
-  margin-left: 280px;
-  font-size: 12px;
-  color: #97a0a8;
-}
-
-.gap {
-  margin: 5px;
+#footer_top > .business_info > div > ul > li > a:hover{
+cursor: pointer;
+color: #2b96ed;
+background-color: #e7f4fd;
 }
