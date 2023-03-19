@@ -149,6 +149,11 @@ nav > ul > li > a {
 
 /* main 시작 */
 
+#main_card_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #main_header {
   max-width: 1060px;
   margin: 0 auto;
@@ -218,6 +223,7 @@ nav > ul > li > a {
   width: 262px;
   height: 370px;
   padding: 4px 4px 28px;
+  margin-bottom: 28px;
 }
 
 .card > .card_img {
@@ -237,17 +243,6 @@ nav > ul > li > a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.card > .card_img > button {
-  position: absolute;
-  z-index: 2;
-  width: 48px;
-  height: 48px;
-  top: 0;
-  right: 0;
-  background: none;
-  cursor: pointer;
 }
 
 .card_info {
@@ -291,6 +286,30 @@ nav > ul > li > a {
   color: #848c94;
 }
 
+/* 카드 하트 버튼 */
+
+.card > .card_img > label {
+  position: absolute;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  top: 10px;
+  right: -10px;
+  cursor: pointer;
+  background: none;
+}
+
+label > input {
+  width: 30px;
+  height: 30px;
+  padding: 30px;
+  display: none;
+}
+
+#hartbox:checked + img {
+  content: url("../img/img/다운로드\ 7.svg");
+}
+
 /* 이미지 슬라이더 버튼 */
 
 button {
@@ -304,6 +323,12 @@ button {
   border-radius: 50%;
   background-color: #fff;
   border: 1px solid #ccc;
+}
+
+.slide_right > button:hover,
+.slide_left > button:hover {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 6px 0 rgba(0, 0, 0, 0.05),
+    0 8px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
 .slide_right {
