@@ -163,6 +163,7 @@ nav > ul > li:hover > span {
 }
 
 .search {
+  position: relative;
   width: 430px;
   height: 56px;
   margin: 0 auto;
@@ -172,14 +173,17 @@ nav > ul > li:hover > span {
   background-color: #2b96ed;
 }
 
-.search > input::placeholder {
-  color: white;
+.search > div {
+  position: absolute;
+  left: 90px;
+}
+.search > div > img {
+  width: 24px;
+  height: 24px;
 }
 
-.search > div {
-  position: relative;
-  justify-content: center;
-  left: 102px;
+.search > input::placeholder {
+  color: white;
 }
 
 #trip_city > .search > input {
@@ -187,6 +191,7 @@ nav > ul > li:hover > span {
   height: 100%;
   border: none;
   text-align: center;
+  font-size: 15px;
   border-radius: 8px;
   background-color: #2b96ed;
   background: rgba(245, 246, 255, 0.1);
@@ -196,6 +201,24 @@ nav > ul > li:hover > span {
 #trip_city > .search > input:hover {
   background-color: rgba(245, 246, 247, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#trip_city > .search > input:focus {
+  background-color: white;
+  text-align: left;
+  padding: 10px;
+  font-size: 15px;
+  padding: 0px 16px 0px 48px;
+  transition: 200ms;
+}
+
+#trip_city > .search > input:focus + div {
+  left: 15px;
+}
+
+#trip_city > .search > input:focus + div > img {
+  content: url("../img/img/ic_search_20x20_gray_500.svg");
+  left: 10px;
 }
 
 /* 상단 미니 여행 카드 */
@@ -231,7 +254,48 @@ nav > ul > li:hover > span {
   background: none;
 }
 
+/* 이미지 슬라이더 버튼 */
+
+button {
+  cursor: pointer;
+}
+
+.slide_right > button,
+.slide_left > button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.slide_right > button:hover,
+.slide_left > button:hover {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 6px 0 rgba(0, 0, 0, 0.05),
+    0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.slide_right {
+  position: absolute;
+  z-index: 10;
+  top: 25%;
+  right: -20px;
+}
+
+.slide_left {
+  position: absolute;
+  z-index: 10;
+  top: 25%;
+  left: -20px;
+}
+
 /* 미니 카드 개인 */
+
+#city_card {
+  max-width: 1060px;
+  position: relative;
+  margin: 0 auto;
+}
 
 #city_card > ul > li:first-child > a {
   margin-left: 0;
@@ -423,10 +487,14 @@ nav > ul > li:hover > span {
 
 /* 이벤트 슬라이드 시작 */
 
+#event {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
 #event > .event_side {
   width: 100%;
   height: 302px;
-  margin-bottom: 40px;
 }
 
 #event > .event_side > .side_list {
@@ -447,9 +515,48 @@ nav > ul > li:hover > span {
   height: 100%;
 }
 
+.slide_dot {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.slide_dot > span {
+  width: 8px;
+  height: 8px;
+  margin: 4px;
+  border-radius: 100%;
+  background-color: #000;
+  opacity: 0.1;
+}
+
+.slide_dot > span:hover {
+  opacity: 0.5;
+}
+
 /* 투어 시작 */
 
 /* 공통 */
+
+#tourCardList {
+  position: relative;
+  display: flex;
+  max-width: 1070px;
+}
+
+#tourCardList > ul {
+  display: flex;
+  height: 330px;
+  align-items: center;
+  overflow: hidden;
+}
+
+#tourCardList > ul > li:first-child {
+  margin-left: -10px;
+}
 
 .tour {
   max-width: 1060px;
@@ -477,6 +584,41 @@ nav > ul > li:hover > span {
 .tour > div > a > img {
   transform: scaleX(-1);
   width: 14px;
+}
+
+/* 투어 카드 슬라이드 버튼 */
+
+button {
+  cursor: pointer;
+}
+
+.tourCardLeft > button,
+.tourCardRight > button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.tourCardList > button:hover,
+.tourCardRight > button:hover {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 6px 0 rgba(0, 0, 0, 0.05),
+    0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.tourCardRight {
+  position: absolute;
+  z-index: 10;
+  top: 45%;
+  right: -12px;
+}
+
+.tourCardLeft {
+  position: absolute;
+  z-index: 10;
+  top: 45%;
+  left: -17px;
 }
 
 /* 투어 카드 */
