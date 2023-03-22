@@ -147,9 +147,55 @@ nav > ul > li > span {
 
 nav > ul > li:hover > span {
   background-color: white;
-  transition: 2s;
+  transition-duration: 2s;
 }
 
+/* 드롭다운 메뉴 */
+
+nav > ul > li:last-child {
+  position: relative;
+}
+
+nav > ul > li:last-child > .drop_menu {
+  position: absolute;
+  top: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #fff;
+  z-index: 5;
+  left: -20px;
+  padding: 10px 0px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 20px 20px 0px;
+  display: none;
+}
+
+nav > ul > li:last-child:hover span {
+  background: none;
+}
+
+nav > ul > li:last-child:hover > ul {
+  display: block;
+  transition-duration: 2s;
+}
+nav > ul > li:last-child > .drop_menu > li {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 170px;
+  height: 50px;
+  align-items: center;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+nav > ul > li:last-child > .drop_menu > li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+nav > ul > li:last-child > .drop_menu > li > a {
+  background: none;
+  color: #666d75;
+}
 /* 메인 시작 */
 
 /* 상단 검색 */
@@ -210,7 +256,6 @@ nav > ul > li:hover > span {
   font-size: 15px;
   padding: 0px 16px 0px 48px;
   transition: 200ms;
-  border: none;
   outline: none;
 }
 
