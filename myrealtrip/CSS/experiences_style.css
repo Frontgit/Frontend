@@ -254,25 +254,27 @@ nav > ul > li:hover > span {
   background: none;
 }
 
-/* 이미지 슬라이더 버튼 */
+/* 투어카드 슬라이더 버튼 */
 
 button {
   cursor: pointer;
 }
 
-.slide_right > button,
-.slide_left > button {
+.slide_right,
+.slide_left {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: #fff;
   border: 1px solid #ccc;
+  margin: 0 auto;
 }
 
-.slide_right > button:hover,
-.slide_left > button:hover {
+.slide_right:hover,
+.slide_left:hover {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 6px 0 rgba(0, 0, 0, 0.05),
     0 8px 12px 0 rgba(0, 0, 0, 0.2);
+  transition-duration: 300ms;
 }
 
 .slide_right {
@@ -537,6 +539,41 @@ button {
   opacity: 0.5;
 }
 
+/* 이벤트 슬라이드 버튼 */
+
+.event_side {
+  position: relative;
+}
+
+.eventBtnLeft,
+.eventBtnRight {
+  display: flex;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.eventBtnLeft {
+  top: 40%;
+  left: 20px;
+}
+
+.eventBtnRight {
+  top: 40%;
+  right: 20px;
+}
+
+.eventBtnLeft:hover,
+.eventBtnRight:hover {
+  background: rgba(0, 0, 0, 0.4);
+  transition-duration: 500ms;
+}
+
 /* 투어 시작 */
 
 /* 공통 */
@@ -592,8 +629,8 @@ button {
   cursor: pointer;
 }
 
-.tourCardLeft > button,
-.tourCardRight > button {
+.tourCardLeft,
+.tourCardRight {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -601,10 +638,11 @@ button {
   border: 1px solid #ccc;
 }
 
-.tourCardList > button:hover,
-.tourCardRight > button:hover {
+.tourCardLeft:hover,
+.tourCardRight:hover {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 6px 0 rgba(0, 0, 0, 0.05),
     0 8px 12px 0 rgba(0, 0, 0, 0.2);
+  transition-duration: 300ms;
 }
 
 .tourCardRight {
@@ -794,6 +832,7 @@ footer > #footer_top {
 #footer_top > .cs_info > .cs_btn > .cs_chat:hover {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px;
+  transition-duration: 300ms;
 }
 
 #footer_top > .business_info {
@@ -1010,6 +1049,7 @@ footer > #footer_top {
   box-shadow: rgba(255, 255, 255, 0.12) 0px 0px 2px 0px inset,
     rgba(0, 0, 0, 0.05) 0px 0px 2px 1px, rgba(0, 0, 0, 0.3) 0px 6px 40px;
   background: rgba(255, 255, 255, 0.9);
+  transition-duration: 400ms;
 }
 
 #chat_cs > div > img {
