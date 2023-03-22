@@ -210,6 +210,8 @@ nav > ul > li:hover > span {
   font-size: 15px;
   padding: 0px 16px 0px 48px;
   transition: 200ms;
+  border: none;
+  outline: none;
 }
 
 #trip_city > .search > input:focus + div {
