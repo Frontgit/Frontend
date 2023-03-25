@@ -1,0 +1,102 @@
+* {
+  text-decoration: none;
+  color: #000;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 10px auto;
+}
+
+#card {
+  width: 250px;
+  height: 311px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#card:hover {
+  box-shadow: 0 2px 8px hsla(212, 7%, 43%, 0.32);
+  transform: translateY(-2px);
+  transition: all 0.15s;
+}
+
+.card_img > a > img {
+  width: 250px;
+  height: 166px;
+}
+.card_img {
+  position: relative;
+}
+
+label {
+  position: absolute;
+  z-index: 3;
+  top: 5px;
+  right: 5px;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+#hartbox:checked + img {
+  content: url("../img/img/다운로드\ 7.svg");
+}
+
+#hartbox {
+  display: none;
+}
+
+.card_info {
+  padding: 10px 16px 16px 16px;
+}
+
+.card_city {
+  font-size: 14px;
+  color: #848c94;
+}
+
+.card_title > h3 {
+  width: 100%;
+  height: 44px;
+  font-size: 15px;
+  line-height: 1.47;
+  color: #343a40;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+}
+
+.card_scope {
+  margin-top: 10px;
+  display: flex;
+  margin-bottom: 3px;
+  align-items: center;
+}
+
+.review_count,
+.card_star {
+  font-size: 12px;
+  color: #848c94;
+}
+
+.review_count {
+  margin-left: 4px;
+}
+
+.card_price > span {
+  font-size: 14px;
+  color: #666d75;
+}
+
+.card_price > span:last-child {
+  color: #848c94;
+  font-size: 12px;
+}
+
+.card_star > img {
+  width: 12px;
+  height: 12px;
+  margin-right: 1px;
+}

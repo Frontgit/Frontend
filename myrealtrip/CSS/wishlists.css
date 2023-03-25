@@ -1,0 +1,635 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: white;
+}
+
+button {
+  border: 0;
+  margin: 0;
+}
+/* 해더 시작 */
+
+#header > .logo {
+  display: flex;
+  position: relative;
+  height: 72px;
+  justify-items: center;
+  align-items: center;
+}
+
+.head-left {
+  display: flex;
+  align-items: center;
+}
+
+.head-search input {
+  align-items: center;
+  width: 300px;
+  height: 40px;
+  font-size: 16px;
+  padding-left: 40px;
+  background-color: #f5f6f7;
+  border: none;
+  background-image: url(../img/ic_search_20x20_gray_500.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px center;
+}
+
+.head-search input:focus {
+  background-color: #ffff;
+}
+
+#header > .search > img {
+  height: 48px;
+}
+
+#header {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 72px;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 1060px;
+  background-color: #ffff;
+  justify-content: space-between;
+}
+
+#header > .logo > img {
+  width: 128px;
+}
+
+#header > #sign_up {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+#header > #sign_up > div > a {
+  padding: 8px 12px;
+  border-radius: 3px;
+  transition-duration: 0.2s;
+  font-weight: bold;
+  color: rgb(102, 109, 117);
+}
+
+#header > #sign_up > .profile > a {
+  border-radius: 30px;
+  padding: 3px;
+}
+
+#sign_up > .profile > a > img {
+  width: 36px;
+  height: 36px;
+}
+
+#header > #sign_up > div > a:hover {
+  color: rgb(102, 109, 117);
+  background-color: #f5f6f7;
+}
+
+#sign_up {
+  display: flex;
+}
+
+#sign_up > div {
+  display: flex;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  color: white;
+}
+
+nav {
+  border-bottom: 1px solid rgb(222, 226, 230);
+}
+
+nav > ul {
+  max-width: 1060px;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+}
+nav > ul > li:first-child {
+  margin: 0;
+}
+
+nav > ul > li {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 14px;
+  align-items: center;
+}
+
+nav > ul > li:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+}
+
+nav > ul > li > span {
+  display: block;
+  width: 100%;
+  height: 3px;
+}
+
+nav > ul > li:hover > span {
+  background-color: #2b96ed;
+  transition: 2s;
+}
+
+nav > ul > li > a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #495056;
+}
+
+/* 드롭다운 메뉴 */
+
+nav > ul > li:last-child {
+  position: relative;
+}
+
+nav > ul > li:last-child > .drop_menu {
+  position: absolute;
+  top: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #fff;
+  z-index: 5;
+  left: -20px;
+  padding: 10px 0px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 20px 20px 0px;
+  display: none;
+}
+
+nav > ul > li:last-child:hover span {
+  background: none;
+}
+
+nav > ul > li:last-child:hover > ul {
+  display: block;
+  transition-duration: 2s;
+}
+nav > ul > li:last-child > .drop_menu > li {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 170px;
+  height: 50px;
+  align-items: center;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+nav > ul > li:last-child > .drop_menu > li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+nav > ul > li:last-child > .drop_menu > li > a {
+  background: none;
+  color: #666d75;
+}
+
+/* main 시작 */
+
+#main_card_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#main_header {
+  max-width: 1060px;
+  margin: 0 auto;
+  align-items: center;
+  padding-top: 40px;
+}
+
+#main_header > .main_title {
+  font-size: 28px;
+  color: #343a40;
+  margin-bottom: 28px;
+}
+
+#main_header > .main_nav > ul {
+  display: flex;
+  padding: 8px 12px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+#main_header > .main_nav > ul > a {
+  color: #141719;
+}
+
+#main_header > .main_nav > ul > a:first-child {
+  background-color: #141719;
+  color: #ffff;
+  border-radius: 24px;
+}
+#main_header > .main_nav > ul > a:first-child > li:hover {
+  background-color: #141719;
+  color: #ffff;
+  border-radius: 24px;
+}
+
+#main_header > .main_nav > ul > a > li {
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 13.5px 18px;
+  border-radius: 24px;
+}
+
+#main_header > .main_nav > ul > a > li:hover {
+  background-color: #f8f9fa;
+}
+
+#main {
+  max-width: 1060px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+}
+
+/* 카드 시작 */
+
+#card_list {
+  display: flex;
+  position: relative;
+}
+
+#card_list > li {
+  margin-right: 4px;
+}
+
+.card {
+  width: 262px;
+  height: 370px;
+  padding: 4px 4px 28px;
+  margin-bottom: 28px;
+}
+
+.card > .card_img {
+  position: relative;
+  display: block;
+  width: auto;
+  height: 254px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.card > .card_img > a {
+  width: 100%;
+}
+
+.card > .card_img > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card_info {
+  margin-top: 10px;
+}
+
+.card_info > .card_title {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(20, 23, 25);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  line-height: 21px;
+}
+
+.card_info > .star {
+  display: flex;
+}
+
+.card_info > .star > p {
+  color: rgb(20, 23, 25);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 138%;
+  margin-left: 2px;
+}
+
+.card_info > .price {
+  margin-top: 2px;
+  font-weight: 600;
+  font-size: 15px;
+  color: rgb(20, 23, 25);
+}
+
+.card_info > .card_city {
+  margin-top: 2px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 138%;
+  color: #848c94;
+}
+
+/* 카드 하트 버튼 */
+
+.card > .card_img > label {
+  position: absolute;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  top: 10px;
+  right: -10px;
+  cursor: pointer;
+  background: none;
+}
+
+label > input {
+  width: 30px;
+  height: 30px;
+  padding: 30px;
+  display: none;
+}
+
+#hartbox:checked + img {
+  content: url("../img/img/다운로드\ 7.svg");
+}
+
+/* 이미지 슬라이더 버튼 */
+
+button {
+  cursor: pointer;
+}
+
+.slide_right,
+.slide_left {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.slide_right:hover,
+.slide_left:hover {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 6px 0 rgba(0, 0, 0, 0.05),
+    0 8px 12px 0 rgba(0, 0, 0, 0.2);
+  transition-duration: 300ms;
+}
+
+.slide_right {
+  position: absolute;
+  z-index: 10;
+  top: 30%;
+  right: -20px;
+}
+
+.slide_left {
+  position: absolute;
+  z-index: 10;
+  top: 30%;
+  left: -20px;
+}
+
+/* 서브 추천 */
+
+#sub_contant {
+  position: relative;
+}
+
+#sub_trip {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 80px 0 70px;
+}
+
+#sub_trip > .sub_title {
+  margin-bottom: 24px;
+}
+
+#sub_trip > .sub_title > h1 {
+  color: #141719;
+  font-size: 22px;
+}
+
+.sub_list {
+  position: relative;
+  overflow: hidden;
+}
+
+#card_list {
+  width: calc(100% / 4);
+}
+
+.more_item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more_item > div > a {
+  height: 48px;
+  color: rgb(20, 23, 25);
+  background-color: #f1f3f5;
+  padding: 13.5px 18px;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 24px;
+}
+
+.more_item > div > a:hover {
+  background-color: #e9ecef;
+}
+
+/* footer 시작 */
+
+#footer_bottom {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 40px 0px;
+}
+
+#footer_bottom > #footer_items {
+  display: flex;
+  align-items: center;
+}
+
+#footer_items > .terms {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+#footer_items > .terms > div {
+  margin-left: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+#footer_items > .terms > div:first-child {
+  margin-left: 0;
+}
+
+#footer_items > .terms > div > a {
+  display: flex;
+  align-items: center;
+  background: none;
+  color: #666d75;
+  font-size: 14px;
+  padding: 6px;
+  font-weight: 500;
+  height: 100%;
+  border-radius: 4px;
+}
+
+#footer_items > .terms > div > a:hover {
+  cursor: pointer;
+  color: #2b96ed;
+  background-color: #e7f4fd;
+}
+
+#footer_items > .terms > div:nth-child(even) > a {
+  font-weight: bold;
+}
+
+#footer_items > .sns_download {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#footer_items > .sns_download > .sns > ul {
+  display: flex;
+  align-items: center;
+}
+
+#footer_items > .sns_download > .sns > ul > li {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+#footer_items > .sns_download > .sns > ul > li > a {
+  display: flex;
+  align-items: center;
+  background: none;
+}
+
+#footer_items > .sns_download > .app_download > ul {
+  display: flex;
+  align-items: center;
+}
+
+#footer_items > .sns_download > .app_download > ul > li {
+  margin: 0 10px;
+}
+
+#footer_items > .sns_download > .app_download > ul > li > a {
+  background: none;
+  display: flex;
+  align-items: center;
+}
+
+#footer_items > .sns_download > span {
+  width: 1px;
+  height: 20px;
+  background-color: rgb(206, 212, 218);
+}
+
+#footer_items > .language {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 118px;
+  height: 40px;
+  border: 1px solid rgb(206, 212, 218);
+  border-radius: 4px;
+  cursor: pointer;
+  background: none;
+  margin-left: 28px;
+}
+
+#footer_items > .language > img:first-child {
+  margin-right: 4px;
+}
+
+#footer_items > .language > img:last-child {
+  margin-left: 12px;
+}
+
+#footer_items > .language > span {
+  font-size: 14px;
+  color: #848c94;
+}
+
+.footer_info {
+  margin-top: 16px;
+  display: flex;
+}
+
+.footer_info > p > a {
+  background: none;
+  font-size: 12px;
+  color: rgb(132, 140, 148);
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.footer_info > p {
+  font-size: 12px;
+  color: rgb(132, 140, 148);
+  line-height: 18px;
+}
+
+.footer_info > div:last-child {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer_info > div:last-child > img {
+  width: auto;
+  height: auto;
+}
+
+/* 채팅문의 */
+
+#chat_cs > div {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: rgba(255, 255, 255, 0.12) 0px 0px 2px 0px inset,
+    rgba(0, 0, 0, 0.05) 0px 0px 2px 1px, rgba(0, 0, 0, 0.22) 0px 4px 20px;
+  backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+#chat_cs > div:hover {
+  box-shadow: rgba(255, 255, 255, 0.12) 0px 0px 2px 0px inset,
+    rgba(0, 0, 0, 0.05) 0px 0px 2px 1px, rgba(0, 0, 0, 0.3) 0px 6px 40px;
+  background: rgba(255, 255, 255, 0.9);
+  transition-duration: 400ms;
+}
+
+#chat_cs > div > img {
+  width: 70%;
+  margin-top: 8px;
+}
